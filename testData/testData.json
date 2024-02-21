@@ -1,0 +1,93 @@
+{
+    "PersonalAssetsAndLiab":{
+        "item1":"Investment",
+        "item2":"Property",
+        "item3":"Cash",
+        "item4":"Other",
+        "item5":"Liability"
+
+    },
+
+    "investor": "31863",
+    "assetName": "BlackRock",
+    "dashBoardHeading": "Activity",
+    "chartLabel": "Investment",
+    "syncWarningMsg": "We are working towards syncing accounts automatically. Until then your data will be refreshed nightly and you will retain the ability to sync accounts below.",
+    "currencies": {
+        "indianCurr":"INR",
+        "defaultCurr":"GBP£"
+    },
+    "advisor": "2154",
+    "address": {
+        "country": "UNITED KINGDOM",
+        "street": "1, Oliver's Yard",
+        "addressLine2": "55-71 City Road",
+        "postCode": "EC1Y 1HQ",
+        "subUrb": "London"
+    },
+    "personalDetails": {
+        "dob": "12 Aug 1985",
+        "phoneNo": "949616",
+        "taxFromDate" : "12 Aug 2005",
+        "isin": "ab112394b",
+        "accountNo": "03895696",
+        "sortCode": "4005"
+    },
+    "accountType": {
+        "isa": "accountTypeUK10413",
+        "sipp": "accountTypeUK10421",
+        "intSIPP" : "accountTypeUK10422",
+        "gia": "accountTypeUK10414",
+        "thirdPartySIPP": "accountTypeUK10419",
+        "offshoreBond": "accountTypeUK10415",
+        "rtsrats": "accountTypeUK10418",
+        "offshoreBondPersonalised": "accountTypeUK10426",
+        "qrops": "accountTypeUK10417",
+        "personalPension": "accountTypeUK10416",
+        "groupSIPP": "accountTypeUK10423",
+        "onshoreBond": "accountTypeUK10425"
+
+    },
+    "sourceOfFunds": "Salary",
+    "applicationCreatedSuccessMsg" : "Your application is nearly complete.",
+    "digitalAcceptanceAttributesForSIPP":{
+        "label1": "1. Adviser Confirmation & Declaration",
+        "label2": "2. Send digital invitation"
+
+    },
+    "digitalAcceptanceAttributesForISA":{
+        "label1": "1. Adviser Confirmation & Declaration",
+        "label2": "2. Send digital invitation",
+        "label3": "3. Additional forms"
+
+    },
+    "paperApplicationAttributes":{
+        "label1": "1. Get the forms",
+        "label2": "2. Upload signed forms"
+
+    },
+    "individualApplicantMandatoryFields":{
+        "email": "The Email field is required.",
+        "phone": "The Phone field is required.",
+        "address":"The Address Line field is required.",
+        "subUrb":"Suburb/Town is required.",
+        "country":"The Country field is required.",
+        "dob":"Please select valid Date of Birth."
+
+    },
+    "fatfCountry":"AFGHANISTAN",
+    "fatfCountryErrorMeesgae": ["This is a prohibited country, we are unable to proceed with the application"],
+    "fatfCountryNationalityErrorMessage": ["We may be unable to accept applications", "for applicants whose nationality is in a sanctioned country or a jurisdiction with strategic","Money Laundering and Terrorist Financing deficiencies"],
+    "trustApplicantDetails":{
+        "lei": "549300TGFLH2QZV80T70",
+        "dateOfEstablishment": "10 May 2010",
+        "country": "AUSTRIA",
+        "taxID": "987654321",
+        "street": "Level 3 50 Queens",
+        "addressLine2": "House 50",
+        "postCode": "3000",
+        "subUrb": "Vienna",
+        "countryOfNationality": "UNITED KINGDOM",
+        "countryOfBirth": "ARMENIA"
+    }
+}

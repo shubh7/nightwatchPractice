@@ -1,0 +1,130 @@
+[
+  {
+    "description": "    Feature Description: As a IP User\n    when navigate to Accounts page , validate Valuations chart on Account Page",
+    "elements": [
+      {
+        "description": "",
+        "id": "account-creation-using-indiviual-applicant;individual-applicant---create-isa",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Individual Applicant - Create ISA",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41558941899
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1170800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "User Login to \"Applications\" as LoginOption",
+            "match": {
+              "location": "step_definitions\\logInSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12589204799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "User creates new \"Individual\" Applicant",
+            "match": {
+              "location": "step_definitions\\applicationsPortalSteps\\createAccountSteps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9920327800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "User creates \"ISA\" account using new Applicant",
+            "match": {
+              "location": "step_definitions\\applicationsPortalSteps\\createAccountSteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12433530799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "New \"ISA\" Account created successfully",
+            "match": {
+              "location": "step_definitions\\applicationsPortalSteps\\createAccountSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22017921799
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 10008123500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 105939300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@individual",
+            "line": 1
+          },
+          {
+            "name": "@5729113",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "account-creation-using-indiviual-applicant",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Account creation using Indiviual Applicant",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      },
+      {
+        "name": "@individual",
+        "line": 1
+      }
+    ],
+    "uri": "features\\applicationsPortal\\createIndividualAcct.feature"
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "name": "iwpt_ui_automation",
+  "version": "1.0.0",
+  "description": "This is an end to end node testing framework called nightwatch to test the IWPT products UI.",
+  "main": "index.js",
+  "scripts": {
+    "smoke": "nightwatch --config ./nightwatch.conf.js --env chromeHeadless --tags @smoke  --parallel 4 --require ./appHooks.js --format json:./report/cucumber_report.json",
+    "regression": "nightwatch --config ./nightwatch.conf.js --env chromeHeadless --tags @regression --parallel 4 --require ./appHooks.js --format json:./report/cucumber_report.json",
+    "local": "nightwatch --config ./nightwatch.conf.js --env chromeBrowser --tags @5729113  --require ./appHooks.js --format json:./report/cucumber_report.json",
+    "e2e-test": "npm run test",
+    "local-test": "cross-env KEY=TEST TESTRAIL=NO RUNID=307567 npm run local",
+    "single-test": "cross-env KEY=TEST npm run local"
+  },
+  "keywords": [],
+  "author": "IWPT",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "@types/superagent": "^4.1.17",
+    "commander": "^10.0.1",
+    "cross-env": "^7.0.3",
+    "cucumber-html-reporter": "^6.0.0",
+    "cucumber-pretty": "^6.0.1",
+    "docx": "^8.0.4",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "officegen": "^0.6.5",
+    "pdfjs-dist": "^3.10.111"
+  },
+  "devDependencies": {
+    "@azure/keyvault-secrets": "^4.7.0",
+    "import-cwd": "^3.0.0",
+    "mssql": "^9.2.0",
+    "nightwatch": "^3.1.1",
+    "superagent": "^8.1.2"
+  }
+}
