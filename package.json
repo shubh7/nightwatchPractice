@@ -1,7 +1,7 @@
 {
   "name": "iwpt_ui_automation",
   "version": "1.0.0",
-  "description": "This is an end to end node testing framework called nightwatch to test the IWPT products UI.",
+  "description": "This is an end to end node testing framework called nightwatch",
   "main": "index.js",
   "scripts": {
     "smoke": "nightwatch --config ./nightwatch.conf.js --env chromeHeadless --tags @smoke  --parallel 4 --require ./appHooks.js --format json:./report/cucumber_report.json",
