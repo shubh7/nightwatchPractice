@@ -1,13 +1,1 @@
-{
-    "applications": {
-        "username": "automation2.mwp@morningstar.com",
-        "password": "M$t@rAuto!S3l3Pwd"
-	},
 
-    "advisor": {
-		
-        "username": "demo@email.com",
-        "password": "M$t@rAuto!S3l3Pwd"
-	}
-   
-}
