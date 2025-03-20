@@ -35,75 +35,17 @@ const loginCommands = {
     */
     async clickLogInButton() {
         await this.waitForElementVisible(
-            "@submitButton",
+            "@loginButton",
             200000,
             true,
             function () { },
-            "Asserting the Submit Button is Present",
+            "Asserting the Login Button is Present",
         );
 
-        await this.click('@submitButton');
+        await this.click('@loginButton');
     },
 
-    /** 
-    * Select login option as Investor Portal
-    * @author slaxmi
-    */
-
-    selectInvestorPortal: async function () {
-        await this.waitForElementVisible("@investorPortalButton", 2000).click("@investorPortalButton");
-    },
-
-    /** 
-    * Select login option as Applications
-    * @author slaxmi
-    */
-
-    selectApplications: async function () {
-        await this.waitForElementVisible(
-            "@applicationsButton",
-            30000,
-            true,
-            function () { },
-            "Asserting Applications button is present",
-        );
-        await this.click("@applicationsButton");
-    },
-
-
-    /** 
-* Select login option as TrasnsferTracker
-* @author skothari
-*/
-
-    selectTransferTracker: async function () {
-        await this.waitForElementVisible(
-            "@transferTrackerButton",
-            30000,
-            true,
-            function () { },
-            "Asserting Transfer Tracker button is present",
-        );
-        await this.click("@transferTrackerButton");
-    },
-
-    
-    /** 
-    * Select login option as Applications
-    * @author slaxmi
-    */
-
-    selectAdvisorPortal: async function () {
-        await this.waitForElementVisible(
-            "@advisorPortalButton",
-            30000,
-            true,
-            function () { },
-            "Asserting Advisor Portal button is present",
-        );
-        await this.click("@advisorPortalButton");
-    },
-
+   
 
 };
 
@@ -113,42 +55,21 @@ module.exports = {
     {
         userNameTextBox:
         {
-            selector: "#Username",
-            // locateStrategy: 'xpath'
+            selector: "#user-name"
 
         },
 
         passwordTextBox:
         {
-            selector: "#Password",
+            selector: "#password",
 
         },
-        submitButton:
+        loginButton:
         {
-            selector: "button[type='submit']",
+            selector: "#login-button",
 
         },
-        investorPortalButton:
-        {
-            selector: "button[value='1038']",
-
-        },
-
-        applicationsButton:
-        {
-            selector: "button[value='1046']",
-
-        },
-
-        transferTrackerButton:
-        {
-            selector: "button[value='TRNTRACK']",
-        },
-        advisorPortalButton:
-        {
-            selector: "button[value='ADVISER2']",
-
-        },
+        
 
     },
 };

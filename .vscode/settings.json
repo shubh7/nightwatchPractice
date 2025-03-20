@@ -1,0 +1,31 @@
+{
+
+    "cucumberautocomplete.steps": [
+
+        "step_definitions/**/*.js"
+
+    ],
+
+    "cucumberautocomplete.syncfeatures": "features/*.feature",
+
+    "cucumberautocomplete.strictGherkinCompletion": true,
+
+    "json.schemas": [
+
+ 
+
+    ],
+
+    "explorer.confirmDelete": false,
+
+    "editor.unicodeHighlight.allowedCharacters": {
+
+        " ": true
+
+    },
+
+    "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "git.autofetch": true
+
+    }

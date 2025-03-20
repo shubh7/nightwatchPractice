@@ -1,7 +1,5 @@
-const env = process.env.KEY;
-const envData = require(`../configs/environments/${env}.json`);
-const userData = require(`./configs/users/usersConfig${env}.json`);
-const testData = require("./testData/testData.json");
+
+const appData = require("./configs/appConfig/appConfig.json");
 
 
 const chrome_webdriver = {
@@ -14,16 +12,13 @@ const chrome_webdriver = {
 const settings ={
     src_folders: ["step_definitions"],
     page_objects_path: ["pages"],
-    custom_commands_path: ["custom-commands", "../utility","../configs"],
+    custom_commands_path: ["custom-commands", "utility","configs"],
 
     test_settings: {
         default: {
             globals_path: "globalSetup.js",
             globals: {
-                userConfig: userData,
-                testDataConfig: testData,
-                envDataConfig: envData,
-                environment: env,
+                appConfig: appData
             },
             test_runner: {
                 type: "cucumber",

@@ -1,6 +1,6 @@
 const TEST_RAIL_INT = process.env.TESTRAIL;
 const env = process.env.KEY;
-const apiObj = require("../onboardingEngagement/custom-commands/testRailIntegration");
+//const apiObj = require("./custom-commands/testRailIntegration");
 const reporter = require("cucumber-html-reporter");
 
 const options = {
@@ -35,7 +35,7 @@ module.exports = {
     after: function(done) {
         reporter.generate(options);
         if (TEST_RAIL_INT === "YES") {
-            apiObj.attachReportToTestRun();
+            // apiObj.attachReportToTestRun();
             done();
         } else {
             console.log("No new test run required");

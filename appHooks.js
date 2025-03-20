@@ -1,5 +1,5 @@
 const { After, Before, AfterStep, setDefaultTimeout } = require("@cucumber/cucumber");
-const apiObj = require("../onboardingEngagement/custom-commands/testRailIntegration");
+//const apiObj = require("./custom-commands/testRailIntegration");
 const TEST_RAIL_INT = process.env.TESTRAIL;
 const date = new Date();
 
@@ -32,11 +32,11 @@ After((scenario) => new Promise(async (resolve) => {
     scenario.testId = testRailId;
     // Publish status of test case in TestRail
     if (TEST_RAIL_INT === "YES") {
-        await apiObj.publishStatus(scenario);
+        //await apiObj.publishStatus(scenario);
     }
     // Attach screenshot of failure steps to test case
     if (scenario.result.status === "FAILED" && TEST_RAIL_INT === "YES") {
-        await apiObj.getRunIDOfTestCase(scenario, "Screen" + currentDate);
+       // await apiObj.getRunIDOfTestCase(scenario, "Screen" + currentDate);
     }
 }));
 

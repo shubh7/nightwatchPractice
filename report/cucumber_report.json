@@ -1,20 +1,20 @@
 [
   {
-    "description": "    Feature Description: As a IP User\n    when navigate to Accounts page , validate Valuations chart on Account Page",
+    "description": "    Feature Description: As an User\n    when navigate to Saucedemo site , validate App logo",
     "elements": [
       {
         "description": "",
-        "id": "account-creation-using-indiviual-applicant;individual-applicant---create-isa",
+        "id": "sauce-demo-app;login-to-saucedemo-app-and-verify-app-logo",
         "keyword": "Scenario",
-        "line": 11,
-        "name": "Individual Applicant - Create ISA",
+        "line": 8,
+        "name": "Login to Saucedemo app and verify App logo",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41558941899
+              "duration": 10938455300
             }
           },
           {
@@ -22,59 +22,33 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1170800
+              "duration": 30669600
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "User Login to \"Applications\" as LoginOption",
+            "line": 9,
+            "name": "User Login to Saucedemo app",
             "match": {
-              "location": "step_definitions\\logInSteps.js:5"
+              "location": "step_definitions\\inventorySteps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 12589204799
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 12,
-            "name": "User creates new \"Individual\" Applicant",
-            "match": {
-              "location": "step_definitions\\applicationsPortalSteps\\createAccountSteps.js:4"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 9920327800
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "User creates \"ISA\" account using new Applicant",
-            "match": {
-              "location": "step_definitions\\applicationsPortalSteps\\createAccountSteps.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 12433530799
+              "duration": 2995679600
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "New \"ISA\" Account created successfully",
+            "line": 10,
+            "name": "User should see App logo",
             "match": {
-              "location": "step_definitions\\applicationsPortalSteps\\createAccountSteps.js:21"
+              "location": "step_definitions\\inventorySteps.js:15"
             },
             "result": {
               "status": "passed",
-              "duration": 22017921799
+              "duration": 153403800
             }
           },
           {
@@ -82,7 +56,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 10008123500
+              "duration": 10013721099
             }
           },
           {
@@ -90,7 +64,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 105939300
+              "duration": 468537500
             }
           }
         ],
@@ -100,31 +74,23 @@
             "line": 1
           },
           {
-            "name": "@individual",
-            "line": 1
-          },
-          {
-            "name": "@5729113",
-            "line": 10
+            "name": "@test",
+            "line": 7
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "account-creation-using-indiviual-applicant",
+    "id": "sauce-demo-app",
     "line": 2,
     "keyword": "Feature",
-    "name": "Account creation using Indiviual Applicant",
+    "name": "Sauce Demo App",
     "tags": [
       {
         "name": "@regression",
         "line": 1
-      },
-      {
-        "name": "@individual",
-        "line": 1
       }
     ],
-    "uri": "features\\applicationsPortal\\createIndividualAcct.feature"
+    "uri": "features\\sauceDemoApp.feature"
   }
 ]
